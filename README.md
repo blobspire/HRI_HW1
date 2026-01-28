@@ -10,7 +10,7 @@ In this homework assignment we will record and replay demonstrations on a robot 
 
 # Download
 git clone https://github.com/vt-hri/HW1.git
-cd HW0
+cd HW1
 
 # Create and source virtual environment
 # If you are using Mac or Conda, modify these two lines as shown in [HW0](https://github.com/vt-hri/HW0)
