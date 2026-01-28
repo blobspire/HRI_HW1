@@ -34,7 +34,7 @@ See `teleop.py` to understand which keys map to which axis of robot motion.
 ## Assignment
 
 Modify the provided code to complete the following steps:
-1. Implement a limiter to prevent users from teleoperating the robot into the table or out of the robot's workspace.
+1. Implement a limiter to prevent users from teleoperating the robot into the table.
 2. Implement a script so that users can "record" a state by pressing the toggle button. The recorded states should be saved to a JSON file (or similar output).
 3. Provide and record a demonstration lifting one block and placing it on the other.
 4. Create a new script (called `replay.py`) that will replay the recorded trajectory. This file should load the JSON file and control the robot to move to each of the recorded states.
