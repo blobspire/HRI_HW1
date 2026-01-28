@@ -25,12 +25,11 @@ pip install numpy pybullet
 python main.py
 ```
 
-### Mac
-
 ## Expected Output
 
 Use your keyboard to teleoperate the robot.
 See `teleop.py` to understand which keys map to which axis of robot motion.
+<img src="env.gif" width="750">
 
 ## Assignment
 
