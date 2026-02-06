@@ -23,7 +23,8 @@ class KeyboardController:
                         ord("l"): np.array([0, 0, 0, 0, 0, -1, 0, 0]),  # yaw -
                         ord("z"): np.array([0, 0, 0, 0, 0, 0, +1, 0]),  # open gripper
                         ord("x"): np.array([0, 0, 0, 0, 0, 0, -1, 0]),  # close gripper
-                        ord("."): np.array([0, 0, 0, 0, 0, 0, 0, +1]),  # toggle
+                        ord("."): np.array([0, 0, 0, 0, 0, 0, 0, +1]),  # toggle (save state)
+                        ord(","): np.array([0, 0, 0, 0, 0, 0, 0, -1]),  # toggle (load state)
                         }
 
     # read the keyboard inputs and convert them to robot actions
