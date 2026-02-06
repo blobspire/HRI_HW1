@@ -58,10 +58,11 @@ class Panda():
     # optionally you can also specify the target orientation of the end effector using ee_quaternion
     # if ee_quaterion is set as None (i.e., not specified), pure position IK will be used
     def inverse_kinematics(self, ee_position, ee_quaternion):
+        pos = [float(x) for x in ee_position]
         if ee_quaternion is None:
-            return p.calculateInverseKinematics(self.panda, 11, list(ee_position))
+            return p.calculateInverseKinematics(self.panda, 11, pos)
         else:
-            return p.calculateInverseKinematics(self.panda, 11, list(ee_position), list(ee_quaternion))
+            return p.calculateInverseKinematics(self.panda, 11, pos, list(ee_quaternion))
 
     # move the robot to a desired position
     # computes the joint angles needed to make the end-effector reach a given target position in Cartesian world space
